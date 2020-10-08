@@ -1,0 +1,53 @@
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+td {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template: 1em 1em 1em 1em / 3em 3em 3em 3em;
+    grid-gap: 2px;
+    color: white;
+}
+
+.grid2x2 {
+    display: grid;
+    text-align: center;
+    grid-template: 5em 5em / repeat(2, 10em);
+    color: white;
+    grid-gap: 5px;
+}
+
+.rood {
+    background-color: rgba(255,0,0,0.5);
+    grid-row: 1 / span 2;
+}
+
+.groen {
+    background-color: rgba(0,255,0,0.5);
+    grid-row: 2;
+}
+
+.blauw {
+    background-color: rgba(0,0,255,0.5);
+    grid-row:1;
+}
+
+.blauw, 
+.rood, 
+.groen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
